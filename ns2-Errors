@@ -1,0 +1,211 @@
+1. 
+Error: netmodel.cc:2767: error: ‘Tcl_getHashValue’ was not declared in this scope
+
+Solution: Edit ../nam-1.11/netmodel.cc
+Replace
+return (int)Tcl_GetHashValue(he); 
+by 
+return *((int*)(&Tcl_GetHashValue(he))); 
+
+2.
+Error: group.cc:84: error: cast from ‘void*’ to ‘int’ loses precision
+
+Solution: Edit ../nam-1.11/group.cc
+Replace
+mbrs[i] = (int) Tcl_GetHashValue(he); 
+by 
+mbrs[i] = *((int*)(&Tcl_GetHashValue(he)));
+
+3. 
+Error: Tcl.cc:566:20: error: invalid conversion from ‘const char*’ to ‘char*’ [-fpermissive]
+
+Solution: Edit ../Tcl.cc
+Replace 
+char *p = strchr(localName, '('); 
+by 
+char *p =const_cast<char*>( strchr(localName, '('));
+
+4. 
+Error: 
+queue/red.cc:876:18: error: invalid conversion from ‘const char*’ to ‘char*’ [-fpermissive]
+queue/red.cc:877:18: error: invalid conversion from ‘const char*’ to ‘char*’ [-fpermissive]
+queue/red.cc:878:18: error: invalid conversion from ‘const char*’ to ‘char*’ [-fpermissive]
+queue/red.cc:879:18: error: invalid conversion from ‘const char*’ to ‘char*’ [-fpermissive]
+
+Solution: Edit ../queue/red.cc
+Replace
+if (((p = strstr(v->name(), "ave")) == NULL) &&
+    ((p = strstr(v->name(), "prob")) == NULL) &&
+    ((p = strstr(v->name(), "curq")) == NULL) &&
+    ((p = strstr(v->name(), "cur_max_p"))==NULL) ) {
+by
+if (((p = const_cast<char*>(strstr(v->name(), "ave"))) == NULL) &&
+    ((p = const_cast<char*>(strstr(v->name(), "prob"))) == NULL) &&
+    ((p = const_cast<char*>(strstr(v->name(), "curq"))) == NULL) &&
+    ((p = const_cast<char*>(strstr(v->name(), "cur_max_p")))==NULL) ) {
+
+5.
+Error:
+queue/rio.cc:565:18: error: invalid conversion from ‘const char*’ to ‘char*’ [-fpermissive]
+queue/rio.cc:566:18: error: invalid conversion from ‘const char*’ to ‘char*’ [-fpermissive]
+queue/rio.cc:567:18: error: invalid conversion from ‘const char*’ to ‘char*’ [-fpermissive]
+queue/rio.cc:568:18: error: invalid conversion from ‘const char*’ to ‘char*’ [-fpermissive]
+queue/rio.cc:569:18: error: invalid conversion from ‘const char*’ to ‘char*’ [-fpermissive]
+queue/rio.cc:570:18: error: invalid conversion from ‘const char*’ to ‘char*’ [-fpermissive]
+queue/rio.cc:571:18: error: invalid conversion from ‘const char*’ to ‘char*’ [-fpermissive]
+
+Solution: Edit ../queue/rio.cc
+Replace
+if (((p = strstr(v->name(), "ave")) == NULL) &&
+    ((p = strstr(v->name(), "in_ave")) == NULL) &&
+    ((p = strstr(v->name(), "out_ave")) == NULL) &&
+    ((p = strstr(v->name(), "prob")) == NULL) &&
+    ((p = strstr(v->name(), "in_prob")) == NULL) &&
+    ((p = strstr(v->name(), "out_prob")) == NULL) &&
+    ((p = strstr(v->name(), "curq")) == NULL)) { 
+by
+if (((p = const_cast<char*>(strstr(v->name(), "ave"))) == NULL) &&
+    ((p = const_cast<char*>(strstr(v->name(), "in_ave"))) == NULL) &&
+    ((p = const_cast<char*>(strstr(v->name(), "out_ave"))) == NULL) &&
+    ((p = const_cast<char*>(strstr(v->name(), "prob"))) == NULL) &&
+    ((p = const_cast<char*>(strstr(v->name(), "in_prob"))) == NULL) &&
+    ((p = const_cast<char*>(strstr(v->name(), "out_prob"))) == NULL) &&
+    ((p = const_cast<char*>(strstr(v->name(), "curq"))) == NULL)) {
+
+6.
+Error: linkstate/ls.h:137:58: error: ‘erase’ was not declared in this scope
+                                                          ^
+Solution: Edit ../linkstate/ls.h
+Replace 
+void eraseAll() { erase(baseMap::begin(), baseMap::end()); } 
+By
+void eraseAll() { this->erase(baseMap::begin(), baseMap::end()); }
+
+7.
+Error:
+tools/ranvar.cc:219:70: error: cannot call constructor ‘GammaRandomVariable::GammaRandomVariable’ directly [-fpermissive]
+
+solution: Eddit ../tools/ranvar.cc
+Replace
+return GammaRandomVariable::GammaRandomVariable(1.0 + alpha_, beta_).value() * pow (u, 1.0 / alpha_);
+By
+return GammaRandomVariable(1.0 + alpha_, beta_).value() * pow (u, 1.0 / alpha_);
+
+8.
+Error:
+mac/mac-802_11Ext.h:175:19: error: expected primary-expression before ‘struct’
+mac/mac-802_11Ext.h:175:41: error: ‘dh_body’ was not declared in this scope
+mac/mac-802_11Ext.h:175:51: error: ‘offsetof’ was not declared in this scope
+
+Solution: Edit ../mac/mac-802_Ext.h 
+#include<cstddef> 
+
+9.
+Error: mobile/nakagami.cc:183:73: error: cannot call constructor ‘ErlangRandomVariable::ErlangRandomVariable’ directly [-fpermissive]
+
+Solution: Edit ../mobile/nakagami.cc
+Replace
+if (int_m == m) {
+    resultPower = ErlangRandomVariable::ErlangRandomVariable(Pr/m, int_m).value();
+} else {
+    resultPower = GammaRandomVariable::GammaRandomVariable(m, Pr/m).value();
+}
+return resultPower;
+
+by
+
+if (int_m == m) {
+    resultPower = ErlangRandomVariable(Pr/m, int_m).value();
+} else {
+    resultPower = GammaRandomVariable(m, Pr/m).value();
+}
+return resultPower;
+
+10.
+Error: linkstate/ls.h:137:58: error: ‘erase’ was not declared in this scope, and no declarations were 
+
+Solution: Edit ../linkstate/ls.h
+Replace
+void eraseAll() { erase(baseMap::begin(), baseMap::end()); }
+By 
+void eraseAll() {baseMap::erase(baseMap::begin(), baseMap::end()); }
+
+11.
+Error: queue/pi.cc:316:18: error: invalid conversion from ‘const char*’ to ‘char*’ [-fpermissive]
+       queue/pi.cc:317:18: error: invalid conversion from ‘const char*’ to ‘char*’ [-fpermissive]
+
+Solution: Edit ../queue/pi.cc
+Replace
+if (((p = strstr(v->name(), "prob")) == NULL) &&
+	((p = strstr(v->name(), "curq")) == NULL)) {
+by
+if (((p = const_cast<char*>(strstr(v->name(), "prob"))) == NULL) &&
+    ((p = const_cast<char*>(strstr(v->name(), "curq"))) == NULL)) {
+    
+12.
+Error: queue/vq.cc:333:17: error: invalid conversion from ‘const char*’ to ‘char*’ [-fpermissive]
+
+Solution: Edit ../queue/vq.cc
+Replace
+if ((p = strstr(v->name(), "curq")) == NULL) {
+by
+if ((p = const_cast<char*>(strstr(v->name(), "curq"))) == NULL) {
+
+13.
+Error: queue/rem.cc:335:18: error: invalid conversion from ‘const char*’ to ‘char*’ [-fpermissive]
+queue/rem.cc:336:18: error: invalid conversion from ‘const char*’ to ‘char*’ [-fpermissive]
+queue/rem.cc:337:18: error: invalid conversion from ‘const char*’ to ‘char*’ [-fpermissive]
+
+Solution: Edit ../queue/rem.cc
+Replace
+if (((p =strstr(v->name(), "ave")) == NULL) &&
+    ((p = strstr(v->name(), "prob")) == NULL) &&
+    ((p = strstr(v->name(), "curq")) == NULL)) {
+by
+if (((p =const_cast<char*>(strstr(v->name(), "ave"))) == NULL) &&
+    ((p = const_cast<char*>(strstr(v->name(), "prob"))) == NULL) &&    
+    ((p = const_cast<char*>(strstr(v->name(), "curq"))) == NULL)) {
+    
+14. 
+Error: queue/gk.cc:207:17: error: invalid conversion from ‘const char*’ to ‘char*’ [-fpermissive]
+
+Solution: Edit ../queue/gk.cc
+Replace
+if ((p = strstr(v->name(), "curq")) == NULL) {
+by
+if ((p = const_cast<char*>(strstr(v->name(), "curq"))) == NULL) {
+
+15.
+Error: xwd.c:87:29: fatal error: X11/Xmu/WinUtil.h: No such file or directory
+
+Solution: 
+sudo apt-get install libxmu-headers
+
+16.
+Error: include/tcl.h:1318:45: error: cast from ‘ClientData {aka void*}’ to ‘int’ loses precision [-fpermissive]
+
+Solution: Edit ../include/tcl.h
+
+17.
+Error: configure: error: Installation of tcl seems incomplete or can't be found automatically.
+
+Solution: ../nam-1.15
+Run sudo ./configure --with-tcl-ver=8.5
+
+18.
+Error: warning: no class variable LanRouter::debug_
+
+These kind of error occurs during *.tcl simulation
+
+Solution:
+With respect to the above error, add,
+LanRouter set debug_ 0
+in *.tcl
+
+
+
+References:
+
+1. https://ramakrishnamundugar.blogspot.in/p/network-simulator-v2.html
+2. https://ftp.gnu.org/gnu/gcc/
+3. https://www.isi.edu/nsnam/ns/ns-problems.html#ns-2.29
