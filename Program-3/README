@@ -1,0 +1,13 @@
+Simulate the transmission of ping messages over a network topology 
+consisting of 6 nodes and find the number of packets dropped due to 
+congestion.
+
+(Source-1)   (Destination-1)
+    n0             n4
+      \           /
+       \         /
+       n2 ----- n3
+       /         \
+      /           \
+    n1             n5
+(Source-2)   (Destination-2)

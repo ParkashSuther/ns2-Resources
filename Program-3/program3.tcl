@@ -1,4 +1,16 @@
 
+# ---------- Topology ---------
+
+# (Source-1)   (Destination-1)
+#     n0             n4
+#       \           /
+#        \         /
+#        n2 ----- n3
+#        /         \
+#       /           \
+#     n1             n5
+# (Source-2)   (Destination-2)
+
 # Step-1: Object of class Simulator
 set ns [new Simulator]
 
