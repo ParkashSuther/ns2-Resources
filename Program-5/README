@@ -1,0 +1,7 @@
+Simulate  an  Ethernet  LAN  using  N  nodes  and  set  multiple  traffic  nodes  and  plot 
+congestion window for different source / destination. 
+
+  (TS1)              (TD1)       (TS2)         (TD2)
+   n0    n1    n2     n3    n4     n5     n6     n7
+    |     |     |     |      |      |      |      |
+   -------------------------------------------------

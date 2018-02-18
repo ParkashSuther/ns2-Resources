@@ -1,4 +1,12 @@
 
+# ------------ Topology -----------
+
+#  (TS1)              (TD1)       (TS2)         (TD2)
+#   n0    n1    n2     n3    n4     n5     n6     n7
+#    |     |     |     |      |      |      |      |
+#   -------------------------------------------------
+
+
 # Step-1: Object of class Simulator
 set ns [new Simulator]
 
