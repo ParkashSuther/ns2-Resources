@@ -1,3 +1,8 @@
+# --------- Topology 1 ----------
+
+#        n0 ---- n1 ---- n2
+#     (Source)      (Destination)
+
 
 # Step-1: Object of class Simulator
 set ns [new Simulator]
@@ -22,17 +27,17 @@ proc finish { } {
 
 # Step-5: Creating Topology
 set n0 [$ns node] 
+set n1 [$ns node]
 set n2 [$ns node]
-set n3 [$ns node]
 
 $n0 label "US1"
-$n3 label "UD1"
+$n2 label "UD1"
 
 $ns color 1 "Blue"
 
-$ns duplex-link $n0 $n2 200Mb 10ms DropTail 
-$ns duplex-link $n2 $n3 1Mb 1000ms DropTail
-$ns queue-limit $n0 $n2 10
+$ns duplex-link $n0 $n1 200Mb 10ms DropTail 
+$ns duplex-link $n1 $n2 1Mb 1000ms DropTail
+$ns queue-limit $n0 $n1 10
 
 # Step-6: Configuring Source and Destination TCP/UDP Agent with Application
 
@@ -49,7 +54,7 @@ $cbr0 attach-agent $udp0
 
 # Step-6.13: UDP Agent for Destination
 set null0 [new Agent/Null] 
-$ns attach-agent $n3 $null0
+$ns attach-agent $n2 $null0
 
 # Step-6.14: Connecting UDP Source and Destination Agents
 $ns connect $udp0 $null0
