@@ -4,11 +4,11 @@ Apply  relevant  applications  over  TCP  and  UDP  agents  changing  the  param
 determine the number of packets sent by TCP / UDP.
 
              (TCP Source)
-   		      n0
-     		        \
+   		    n0
+     		    \
       		   \
       		    n2 ---- n3 (Destination)
       		   /
-     		        /
-   		      n1
+     		    /
+   		    n1
             (UDP Source)
