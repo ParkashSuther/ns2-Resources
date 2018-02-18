@@ -2,11 +2,11 @@
 # -------- Topology --------
 
 # (US1)         (TS1)
-# n0     n1      n3      n4      
+# n0     n1      n3      n2      
 #  |      |       |       |      
 #  ------------------------
 #                         |
-#                         n2
+#                         n4
 #                         |
 #                         n6
 #                         |
@@ -57,9 +57,11 @@ $n8 label "TD1"
 $ns color 1 "Blue"
 $ns color 2 "Red"
 
-$ns make-lan "$n0 $n1 $n2 $n3 $n4" 1Mb 10ms LL Queue/DropTail Mac/802_3
+$ns make-lan "$n0 $n1 $n3 $n4 $n2" 1Mb 10ms LL Queue/DropTail Mac/802_3
 $ns make-lan "$n5 $n6 $n7 $n8 $n9" 1Mb 10ms LL Queue/DropTail Mac/802_3
 $ns duplex-link $n2 $n6 1Mb 30ms DropTail
+
+$ns duplex-link-op $n2 $n6 orient up
 
 Mac/802_3 set datarate_ 10Mb
 

@@ -58,6 +58,12 @@ $ns duplex-link $n2 $n3 0.4Mb 30ms DropTail
 $ns duplex-link $n3 $n4 1Mb 10ms DropTail
 $ns duplex-link $n3 $n5 1Mb 10ms DropTail
 
+$ns duplex-link-op  $n0 $n2 orient right-down
+$ns duplex-link-op  $n1 $n2 orient right-up
+$ns duplex-link-op  $n2 $n3 orient right
+$ns duplex-link-op  $n3 $n4 orient right-up
+$ns duplex-link-op  $n3 $n5 orient right-down
+
 # Step-6: Configuring Source and Destination TCP/UDP Agent with Application
 
 # Step-6.11: Ping Agent for Source

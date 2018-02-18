@@ -10,9 +10,9 @@ n -t * -a 0 -s 0 -S UP -v circle -c black -i black
 n -t * -a 1 -s 1 -S UP -v circle -c black -i black
 n -t * -a 2 -s 2 -S UP -v circle -c black -i black
 n -t * -a 3 -s 3 -S UP -v circle -c black -i black
-l -t * -s 0 -d 2 -S UP -r 10000000 -D 0.001 -c black
-l -t * -s 1 -d 2 -S UP -r 10000000 -D 0.001 -c black
-l -t * -s 2 -d 3 -S UP -r 10000000 -D 0.001 -c black
+l -t * -s 0 -d 2 -S UP -r 10000000 -D 0.001 -c black -o right-down
+l -t * -s 1 -d 2 -S UP -r 10000000 -D 0.001 -c black -o right-up
+l -t * -s 2 -d 3 -S UP -r 10000000 -D 0.001 -c black -o right
 + -t 0.1 -s 1 -d 2 -p cbr -e 210 -c 2 -i 0 -a 2 -x {1.0 3.1 0 ------- null}
 - -t 0.1 -s 1 -d 2 -p cbr -e 210 -c 2 -i 0 -a 2 -x {1.0 3.1 0 ------- null}
 h -t 0.1 -s 1 -d 2 -p cbr -e 210 -c 2 -i 0 -a 2 -x {1.0 3.1 -1 ------- null}
