@@ -32,7 +32,7 @@ $ns node-config -adhocRouting $val(rp) \
 		-agentTrace ON \
 		-routerTrace ON \
 		-macTrace OFF \
-        -movementTrace OFF
+        	-movementTrace OFF
         
 # Step-1: Object of class Simulator
 set ns [new Simulator]
@@ -104,7 +104,7 @@ proc destination {} {
 	$ns at [expr $now + $time] "destination"
 }
 
-#tell nodes when the simulation ends
+# To reset nodes
 for {set i 0} {$i < $val(nn)} {incr i} {
 	$ns at $val(stop) "$n($i) reset"
 }
