@@ -12,6 +12,13 @@ $n1 label "Source/udp1"
 $n2 label "Router"
 $n3 label "Destination/Null"
 
+# Link Positioning for NAM
+$ns duplex-link-op  $n0 $n2 orient right-down
+$ns duplex-link-op  $n1 $n2 orient right-up
+$ns duplex-link-op  $n2 $n3 orient right
+$ns duplex-link-op  $n3 $n4 orient right-up
+$ns duplex-link-op  $n3 $n5 orient right-down
+
 # Link failure
 $ns rtmodel-at 0.9 down $n2 $n6
 $ns rtmodel-at 1.5 up $n2 $n6
@@ -41,10 +48,3 @@ $tcp0 trace cwnd_
 
 # Setting congestion window size (optional)
 $tcp0 set maxcwnd_ 10
-
-# Link Positioning
-$ns duplex-link-op  $n0 $n2 orient right-down
-$ns duplex-link-op  $n1 $n2 orient right-up
-$ns duplex-link-op  $n2 $n3 orient right
-$ns duplex-link-op  $n3 $n4 orient right-up
-$ns duplex-link-op  $n3 $n5 orient right-down
