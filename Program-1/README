@@ -2,3 +2,10 @@ Implement three nodes point–to–point network with duplex links between them.
 
    n0 ----- n1 ----- n2
 (Source)	(Destination)
+
+Assignment 1: Vary Bandwidth (n0-n1) = Bandwidth (n1-n2)
+Assignment 2: Vary Bandwidth (n0-n1) > Bandwidth (n1-n2)
+Assignemnt 3: Vary Bandwidth (n0-n1) < Bandwidth (n1-n2)
+Assignment 4: Vary Delay (n0-n1) = Delay (n1-n2)
+Assignment 3: Vary Delay (n0-n1) > Delay (n1-n2)
+Assignemnt 4: Vary Delay (n0-n1) < Delay (n1-n2)
