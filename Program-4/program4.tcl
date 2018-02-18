@@ -1,4 +1,19 @@
 
+# -------- Topology --------
+
+# n0     n1      n3      n4      
+#  |      |       |       |      
+#  ------------------------
+#                         |
+#                         n2
+#                         |
+#                         n6
+#                         |
+# -------------------------
+#  |      |       |       |
+# n5     n7      n8      n9
+
+
 # Step-1: Object of class Simulator
 set ns [new Simulator]
 
