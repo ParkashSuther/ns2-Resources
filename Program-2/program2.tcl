@@ -1,4 +1,16 @@
 
+# --------- Topology ----------
+
+#      (TCP Source)
+#   		n0
+#     		  \
+#      		   \
+#      			n2 ---- n3 (Destination)
+#      		   /
+#     		  /
+#   		n1
+#      (UDP Source)
+
 # Step-1: Object of class Simulator
 set ns [new Simulator]
 
