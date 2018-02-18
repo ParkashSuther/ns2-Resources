@@ -88,7 +88,7 @@ puts $outFile2 "XUnitText: SimulationTime(Secs)"
 puts $outFile2 "YUnitText: CongestionWindowSize"
 
 
-#define findWindowSize
+# Storing Window size
 proc findWindowSize {tcpSource outFile} {
 	global ns
 	set now [$ns now]
