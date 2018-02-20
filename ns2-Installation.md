@@ -1,8 +1,7 @@
 ## Steps for ns2 Installation
 
-Step 1:
+**Step 1: Building dependencies**
 
-### Building dependencies
 1. ``sudo apt-get update``
 2. ``sudo apt-get dist-upgrade``
 3. ``sudo apt-get update``
@@ -11,7 +10,7 @@ Step 1:
 6. ``sudo apt-get install tcl8.5-dev tk8.5-dev``
 7. ``sudo apt-get install perl xgraph libxt-dev libx11-dev libxmu-dev``
 
-Step 2:
+**Step 2: Installation**
 
 Step 2.1: Download ns-allinone-2.xy
 
@@ -23,7 +22,7 @@ Step 2.1: Download ns-allinone-2.xy
 
 Note: "2.xy" in ns-allinone.2.xy indicate the different releases (2.29, 2.30, 2.31, 2.32, 2.33, 2.34 and recent 2.35) of ns2.
 
-Step 3: After successful installtaion of Step 2,
+**Step 3: After successful installtaion of Step 2**
 
 ### Setting PATH
 
