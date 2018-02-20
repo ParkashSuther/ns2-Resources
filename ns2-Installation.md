@@ -22,9 +22,7 @@ Step 2.1: Download ns-allinone-2.xy
 
 Note: "2.xy" in ns-allinone.2.xy indicate the different releases (2.29, 2.30, 2.31, 2.32, 2.33, 2.34 and recent 2.35) of ns2.
 
-**Step 3: After successful installtaion of Step 2**
-
-### Setting PATH
+**Step 3: After successful installtaion of Step 2** (Setting PATH)
 
 ``sudo gedit ~/.bashrc``
 
