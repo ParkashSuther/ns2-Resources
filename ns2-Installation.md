@@ -1,8 +1,8 @@
-------------------------- Steps for ns2 Installation -------------------------
+## Steps for ns2 Installation
 
 Step 1:
 
-# Building dependencies
+### Building dependencies
 1. sudo apt-get update
 2. sudo apt-get dist-upgrade
 3. sudo apt-get update
@@ -25,7 +25,7 @@ Note: "2.xy" in ns-allinone.2.xy indicate the different releases (2.29, 2.30, 2.
 
 Step 3: After successful installtaion of Step 2,
 
-# Setting PATH
+### Setting PATH
 
 sudo gedit ~/.bashrc
 
@@ -37,7 +37,7 @@ TCL_LIBRARY=$TCL_LIBRARY:/home/maggi/ns-allinone-2.35/tcl8.5.10/library
 
 sudo source ~/.bashrc
 
---------------------------- Important ------------------
+### Important 
 
 During installtion many errors result due to compiler issue.
 
