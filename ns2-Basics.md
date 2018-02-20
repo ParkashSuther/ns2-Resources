@@ -1,5 +1,11 @@
 ### Network Simulator NS2
 
+**NS2 Directory Structure**
+
+<p align="center">
+<img src="http://nile.wpi.edu/NS/Figure/fig17.gif">
+</p>
+
 **TCP Packet Flow**
 
 <p align="center">
@@ -35,3 +41,8 @@
 <p align="center">
 <img src="http://nile.wpi.edu/NS/Figure/fig13.gif">
 </p>
+
+
+**References:**
+
+1. [NS by Example (Jae Chung and Mark Claypool)](http://nile.wpi.edu/NS/)
