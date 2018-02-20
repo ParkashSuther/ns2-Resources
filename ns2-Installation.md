@@ -40,6 +40,6 @@ During installtion many errors result due to compiler issue.
 
 Step 1: Edit Makefile.in and change CC = @CC@ to CC = @CC@-4.4 and CPP = @CXX@ to CPP = @CXX@-4.4
 
-References:
+### References:
 
-1. http://ftp.isi.edu/nsnam/dist/
+1. [ns-allinone](http://ftp.isi.edu/nsnam/dist/)
