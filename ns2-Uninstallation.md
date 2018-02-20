@@ -1,6 +1,6 @@
-------------------------- Steps to uninstall ns2 -------------------------
+### Steps to uninstall ns2 
 
-1. Delete the directory 'ns-allinone-2.35'.
+1. Delete the directory  ```ns-allinone-2.35```.
 
 2. Delete the ns related files from '/user/local/bin'.
 
