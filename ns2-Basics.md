@@ -46,3 +46,4 @@
 **References:**
 
 1. [NS by Example (Jae Chung and Mark Claypool)](http://nile.wpi.edu/NS/)
+2. [The ns manual](https://pdfs.semanticscholar.org/e155/d450d59f9f315459075fba2133b2adb4718b.pdf)
