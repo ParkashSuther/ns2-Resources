@@ -1,4 +1,6 @@
 # Initilizing Traffic colour (red, blue, green, orange)
+
+![animation](http://nile.wpi.edu/NS/Figure/fig11.gif)
 $ns color 1 "red"
 $ns color 2 "blue"
 
