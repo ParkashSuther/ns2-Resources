@@ -46,6 +46,7 @@
 **References:**
 
 1. [NS by Example (Jae Chung and Mark Claypool)](http://nile.wpi.edu/NS/)
-2. [The ns manual](https://pdfs.semanticscholar.org/e155/d450d59f9f315459075fba2133b2adb4718b.pdf)
-3. [NSG2](https://sites.google.com/site/pengjungwu/nsg)
-4. [Visual Network Simulator](http://apus.uma.pt/vns/#Download)
+2. [NS2 Basics](http://www.mathcs.emory.edu/~cheung/Courses/558/Syllabus/)
+3. [The ns manual](https://pdfs.semanticscholar.org/e155/d450d59f9f315459075fba2133b2adb4718b.pdf)
+4. [NSG2](https://sites.google.com/site/pengjungwu/nsg)
+5. [Visual Network Simulator](http://apus.uma.pt/vns/#Download)
