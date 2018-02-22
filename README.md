@@ -7,11 +7,12 @@
 > - C++ is fast to run but slow to change. It is suitable for running a large simulation. 
 > - OTcl is slow to run but fast to change. It is therefore suitable to run a small simulation over several repetitions.
 > - Use OTcl
-    - for configuration, setup, or one time simulation, or
-    - to run simulation with existing NS2 modules.    
+>   - for configuration, setup, or one time simulation, or
+>   - to run simulation with existing NS2 modules.    
 > - Use C++
-    - when you are dealing with a packet, or    
-    - when you need to modify existing NS2 modules.
+>   - when you are dealing with a packet, or    
+>   - when you need to modify existing NS2 modules.
+> - "ns" is a C++ executable file obtained from the compilation,
 
 **Basic Architecture of NS2**
 <p align=center>
