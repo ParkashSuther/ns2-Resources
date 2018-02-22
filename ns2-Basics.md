@@ -6,10 +6,10 @@
 <img src="http://nile.wpi.edu/NS/Figure/fig17.gif">
 </p>
 
-**TCP Packet Flow**
+**Class Hierarchy**
 
 <p align="center">
-<img src="http://nile.wpi.edu/NS/Figure/fig11.gif">
+<img src="http://nile.wpi.edu/NS/Figure/fig6.gif">
 </p>
 
 **Node (Unicast and Multicast)**
@@ -18,16 +18,16 @@
 <img src="http://nile.wpi.edu/NS/Figure/fig7.gif">
 </p>
 
-**Class Hierarchy**
-
-<p align="center">
-<img src="http://nile.wpi.edu/NS/Figure/fig6.gif">
-</p>
-
 **Link**
 
 <p align="center">
 <img src="http://nile.wpi.edu/NS/Figure/fig8.gif">
+</p>
+
+**TCP Packet Flow**
+
+<p align="center">
+<img src="http://nile.wpi.edu/NS/Figure/fig11.gif">
 </p>
 
 **Tracing**
