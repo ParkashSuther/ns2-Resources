@@ -1,7 +1,8 @@
-# ---------- TCP FTP Traffic --------
+## TCP FTP Traffic
 
-# Step 1: Initilizing TCP agent for sender
-set tcp0 [new Agent/TCP]
+**Step 1: Initilizing TCP agent for sender**
+
+``set tcp0 [new Agent/TCP]``
 
 # Step 2: Attching TCP agent to source
 $ns attach-agent $n0 $tcp0
