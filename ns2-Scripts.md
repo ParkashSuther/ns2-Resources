@@ -52,12 +52,16 @@ $ns make-lan “ $n0 $n1 $n2 $n3 ” 100Mb 10ms LL Queue/DropTail Mac/802_3
 ``$err set rate_ 0.2``
 
 ## Routing protocol
+
+**Wired routing**
 ```
 $ns rtproto Static
 $ns rtproto Session
 $ns rtproto DV
 $ns rtproto LS
 ```
+**Wireless routing**
+``$ns node-config -adhocRouting dsdv`` ("dsdv" can be replaced by DSR, FLOODING, OMNIMCAST, AODV, TORA, M-DART, etc.)
 
 ## Congestion Window
 
