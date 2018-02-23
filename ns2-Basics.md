@@ -30,19 +30,6 @@
 <img src="http://nile.wpi.edu/NS/Figure/fig11.gif">
 </p>
 
-**Tracing**
-
-<p align="center">
-<img src="http://nile.wpi.edu/NS/Figure/fig9.gif">
-</p>
-
-**Trace File**
-
-<p align="center">
-<img src="http://nile.wpi.edu/NS/Figure/fig13.gif">
-</p>
-
-
 **References:**
 
 1. [NS by Example (Jae Chung and Mark Claypool)](http://nile.wpi.edu/NS/)
