@@ -32,7 +32,7 @@
 
 [ns2 Basics](ns2-Basics.md)
 
-[Tcl Programming](../TCL-Resources)
+[Tcl Programming](github.com/brcnitk/TCL-Resources)
 
 OTcl Programming
 
