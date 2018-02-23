@@ -8,6 +8,7 @@
 6. [Designing and testing new TCP protocols using NS](http://www.mathcs.emory.edu/~cheung/Courses/558-old/Syllabus/90-NS/5-NS-TCP-research/intro.html)
 7. [Network Simulator 2: a Simulation Tool for Linux](http://www.linuxjournal.com/article/5929)
 8. [NS2 Basics with Example](http://www.jgyan.com/ns2/run%20tcl.php)
+9. [ns Tutorial](http://www.engr.iupui.edu/~dskim/tutorials/print.php?article=ns2)
 
 
 **e-books:**
