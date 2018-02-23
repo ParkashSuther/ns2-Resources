@@ -36,11 +36,23 @@
 <img src="http://nile.wpi.edu/NS/Figure/fig9.gif">
 </p>
 
-**Trace File**
+**Trace File** (Wired network)
 
 <p align="center">
 <img src="http://nile.wpi.edu/NS/Figure/fig13.gif">
 </p>
+
+**Trace File** (Wireless network - old format)
+
+<p align="center">
+<img src="Figures/wireless-trace-old-1.png">
+</p>
+
+<p align="center">
+<img src="Figures/wireless-trace-old-2.png">
+</p>
+
+**Trace File** (Wireless network - new format)
 
 
 **References:**
