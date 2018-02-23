@@ -51,6 +51,14 @@ $ns make-lan “ $n0 $n1 $n2 $n3 ” 100Mb 10ms LL Queue/DropTail Mac/802_3
 
 ``$err set rate_ 0.2``
 
+## Routing protocol
+```
+$ns rtproto Static
+$ns rtproto Session
+$ns rtproto DV
+$ns rtproto LS
+```
+
 ## Congestion Window
 
 **File for recording congestion window data**
