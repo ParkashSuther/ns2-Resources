@@ -1,3 +1,5 @@
+
+
 if {$argc != 1} {
 	error "Command: ns <program6.tcl> <Number_of_Nodes>"
 	exit 0
@@ -20,19 +22,19 @@ set val(stop)       100
 
 # Configure the Wireless Nodes
 $ns node-config -adhocRouting $val(rp) \
-		-llType $val(ll) \
-		-macType $val(mac) \
-		-ifqType $val(ifq) \
-		-channelType $val(chan) \
-		-propType $val(prop) \
-		-antType $val(ant) \
-		-ifqLen $val(ifqlen) \
-		-phyType $val(netif) \
-		-topoInstance $topo \
-		-agentTrace ON \
-		-routerTrace ON \
-		-macTrace OFF \
-        	-movementTrace OFF
+				-llType $val(ll) \
+				-macType $val(mac) \
+				-ifqType $val(ifq) \
+				-channelType $val(chan) \
+				-propType $val(prop) \
+				-antType $val(ant) \
+				-ifqLen $val(ifqlen) \
+				-phyType $val(netif) \
+				-topoInstance $topo \
+				-agentTrace ON \
+				-routerTrace ON \
+				-macTrace OFF \
+				-movementTrace OFF
         
 # Step-1: Object of class Simulator
 set ns [new Simulator]
