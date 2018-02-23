@@ -36,7 +36,7 @@ Tcl Programming
 
 OTcl Programming
 
-[Program-1](Program-1)
+[Program-1](Program-1) (3-nodes point-to-point topology)
 
 [ns2 Scripts](ns2-Scripts.md)
 
@@ -44,16 +44,18 @@ OTcl Programming
 
 [ns2 Trace](ns2-Trace.md)
 
-[Program-2](Program-2)
+[Program-2](Program-2) (4-nodes pint-to-point topology)
 
-[Program-3](Program-3)
+[Program-3](Program-3) (Dumb-bell ping)
 
-[Program-4](Program-4)
+[Program-4](Program-7) (Ring Topology)
 
-[Program-5](Program-5)
+[Program-5](Program-5) (1-Ethernet LAN 8-nodes)
 
-[Program-6](Program-6)
+[Program-6](Program-4) (Ethernet LAN 10-nodes)
 
-[Program-7](Program-7)
+[Program-7](Program-6) (Wireless)
+
+
 
 
