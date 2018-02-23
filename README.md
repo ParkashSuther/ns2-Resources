@@ -38,4 +38,22 @@ OTcl Programming
 
 [Program-1](Program-1)
 
+[ns2 Scripts](ns2-Script.md)
+
+[ns2 Traffics](ns2-Traffics.md)
+
+[ns2 Trace](ns2-Trace.md)
+
+[Program-2](Program-2)
+
+[Program-3](Program-3)
+
+[Program-4](Program-4)
+
+[Program-5](Program-5)
+
+[Program-6](Program-6)
+
+[Program-7](Program-7)
+
 
