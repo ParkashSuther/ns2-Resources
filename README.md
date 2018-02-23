@@ -38,7 +38,7 @@ OTcl Programming
 
 [Program-1](Program-1)
 
-[ns2 Scripts](ns2-Script.md)
+[ns2 Scripts](ns2-Scripts.md)
 
 [ns2 Traffics](ns2-Traffics.md)
 
