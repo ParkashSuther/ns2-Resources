@@ -32,9 +32,9 @@
 
 [ns2 Basics](ns2-Basics.md)
 
-Tcl Programming
+[Tcl Programming](https://github.com/brcnitk/TCL-Resources)
 
-OTcl Programming
+[OTcl Programming](https://github.com/brcnitk/OTCL-Resources)
 
 [Program-1](Program-1) (3-nodes point-to-point topology)
 
