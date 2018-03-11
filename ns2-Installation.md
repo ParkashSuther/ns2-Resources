@@ -18,7 +18,7 @@ Step 2.1: Download ns-allinone-2.xy
 
 2. ``sudo tar -zxvf ns-allinone-2.xy.tar.gz``
 3. ``cd ns-allinone-2.xy``
-4. ``sudo ./install`` OR ``gcc-4.4 ./install``
+4. ``sudo ./install`` OR ``CC=gcc-4.4 CXX=g++-4.4 ./install``
 
 Note: "2.xy" in ns-allinone.2.xy indicate the different releases (2.29, 2.30, 2.31, 2.32, 2.33, 2.34 and recent 2.35) of ns2.
 
