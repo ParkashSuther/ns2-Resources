@@ -4,8 +4,7 @@
 
 > Represents the time distance between 2-nodes or length of a link between 2-nodes.
 
-** Bandwidth and Packet size**
-
+**Bandwidth and Packet size**
 ```
 Transmission Time = Packet Size / Bandwidth
 ```
