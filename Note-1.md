@@ -2,7 +2,7 @@
 
 **Propogation Delay**
 
-> Represents the time distance between 2-nodes or length of a link between 2-nodes.
+> Represents the time distance between 2-nodes or length in seconds of a link between 2-nodes.
 
 **Bandwidth and Packet size**
 ```
@@ -19,7 +19,15 @@ Transmission Time = Packet Size / Bandwidth
 
 >Transmission Time = 500\*8/10000000 = 0.4ms indicates at any time a link between 2-nodes can occupy maximum of 4ms/0.4ms = 10 packets, which further depends on interval. In the above case |transmission time - interval| = 0 ms, indicates time (s) gap between two adjacent packets is 0. i.e in case 1 link between 2-nodes occupy 10 packets.
 
+<p align=center>
+  <img src="Figures/case1.png" />
+</p>
+
 **Case 1: (Bandwidth = 10 Mbps, Propogation Delay = 4ms, Packet Size = 500B and Interval = 0.8ms)**
 
 >Transmission Time = 500\*8/10000000 = 0.4ms indicates at any time a link between 2-nodes can occupy maximum of 4ms/0.4ms = 10 packets, which further depends on interval. In the above case |transmission time - interval| = 0.4ms, indicates time (s) gap between two adjacent packets is 0.4ms. i.e in case 2 link between 2-nodes occupy 4ms / 0.4ms + 0.4ms = 5 packets.
+
+<p align=center>
+  <img src="Figures/case2.png" />
+</p>
 
